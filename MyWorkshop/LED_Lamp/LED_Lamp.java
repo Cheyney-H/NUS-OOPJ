@@ -44,7 +44,6 @@ public class LED_Lamp{
         }else if (lightIdx == 2){
             blueOn = true;
             System.out.println("Light is now blue");
-            break;
         }else{
             System.out.println("Error!! Expects 0, 1 or 2.");
         }
