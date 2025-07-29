@@ -1,5 +1,4 @@
 public class LED_Lamp{
-
     private boolean redOn = false;
     private boolean greenOn = false;
     private boolean blueOn = false;
