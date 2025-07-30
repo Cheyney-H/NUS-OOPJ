@@ -12,9 +12,9 @@ public class Adder {
         String color2s = color2.getColor().toLowerCase();
         if (sameColors(color1s, color2s, "red", "blue")){
             return new Color("magenta");
-        }else if(sameColors(color1s, color2s, "red", "green")){
+        }else if (sameColors(color1s, color2s, "red", "green")){
             return new Color("yellow");
-        }else if(sameColors(color1s, color2s, "blue", "green")){
+        }else if (sameColors(color1s, color2s, "blue", "green")){
             return new Color("cyan");
         }else{
             return null;
