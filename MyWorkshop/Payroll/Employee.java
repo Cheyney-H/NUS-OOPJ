@@ -1,8 +1,10 @@
 abstract class Employee {
     private String name;
+    private double bod;
 
-    public Employee(String name){
+    public Employee(String name, double bod){
         this.name = name;
+        this.bod = bod;
     }
 
     public String getName(){
@@ -11,12 +13,21 @@ abstract class Employee {
 
     public abstract double earnings();
 
-    public double adjustedPay(double adjustment){
-        return earnings() + adjustment;
+    public doubel getBod(){
+        return bod;
+    }
+
+    public void setBod(double bod){
+        this.bod = bod;
+    }
+    
+    public double adjustedPay(){
+        return earnings() + bod;
     }
 
     @Override
     public String toString(){
         return  getClass().getSimpleName() + ": " + getName();
     }
+
 }
