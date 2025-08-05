@@ -2,8 +2,8 @@ class HourlyEmployee extends Employee {
     private int hours;
     private double hourlyRate;
 
-    public HourlyEmployee(String name, int hours, double hourlyRate){
-        super(name);
+    public HourlyEmployee(String name, int hours, double hourlyRate, double bod){
+        super(name, bod);
         this.hours = hours;
         this.hourlyRate = hourlyRate;
     }
@@ -12,4 +12,5 @@ class HourlyEmployee extends Employee {
     public double earnings(){
         return hours * hourlyRate;
     }
+
 }
