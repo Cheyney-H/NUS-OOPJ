@@ -1,8 +1,8 @@
 class SalariedEmployee extends Employee {
     private double weeklySalary;
 
-    public SalariedEmployee(String name, double weeklySalary){
-        super(name);
+    public SalariedEmployee(String name, double weeklySalary, double bod){
+        super(name, bod);
         this.weeklySalary = weeklySalary;
     }
 
@@ -10,4 +10,5 @@ class SalariedEmployee extends Employee {
     public double earnings(){
         return weeklySalary;
     }
+
 }
